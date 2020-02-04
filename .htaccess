@@ -1,0 +1,17 @@
+DirectoryIndex index.php
+Options +FollowSymLinks
+ErrorDocument 404 http://localhost/second_task/404
+ErrorDocument 403 http://localhost/htaccessprac/403.php
+IndexIgnore * 
+RewriteEngine On
+RewriteRule ^home index.php [NC,L]
+RewriteRule ^city$ city.php [NC,L]
+RewriteRule ^Software-House$ software_house.php [NC,L]
+RewriteRule ^Departments$ departments.php [NC,L]
+RewriteRule ^Employees$ employee.php [NC,L]
+RewriteRule  ^404$ 404.php [NC,L]
+RewriteRule ^city/([0-9]+) city.php?edit_id=$1 [NC,L]
+RewriteRule ^Software-House/([0-9]+)/([0-9]+) software_house.php?edit_id=$1&city_id=$2 [NC,L]
+RewriteRule ^Department/([0-9]+)/([0-9]+) departments.php?edit_id=$1&s_id=$2 [NC,L]
+RewriteRule ^Employee/([0-9]+)/([0-9]+)/([0-9]+)/([0-9)]+) employee.php?edit_id=$1&s_id=$2&d_id=$3&c_id=$4 [NC,L]
+
