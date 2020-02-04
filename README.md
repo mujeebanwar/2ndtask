@@ -1,7 +1,7 @@
 # Convert Array Task Into Mysqli Crud
 
 ---
->This Have Different Modules Such as
+>This Task Have Different Modules Such as
 1.Cities
 2.Software Houses
 3.Departments
@@ -9,7 +9,7 @@
 5.Search
 ---
 ---
-##Every Module Have Different Functionality Such as
+## Every Module Have Different Functionality Such as
 1.Create
 2.Read
 3.Update
@@ -17,4 +17,4 @@
 
 ---
 
-##Also Search Employees in the bases of  **Cities Software House Departments**
+## Also Search Employees in the bases of  **Cities Software House Departments**
